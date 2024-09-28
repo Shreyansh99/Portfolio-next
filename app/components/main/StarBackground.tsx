@@ -6,7 +6,8 @@ import {Points, PointMaterial} from '@react-three/drei'
 //  @ts-expect-error
 import * as random from 'maath/random/dist/maath-random.esm'
 
-const StarBackground = (props:unknown) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const StarBackground = (props:any) => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const ref:any = useRef()
     const [sphere] = useState(()=>
