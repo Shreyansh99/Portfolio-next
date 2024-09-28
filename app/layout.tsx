@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import StarsCanvas from "./components/main/StarBackground";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body
         className={`bg-[#030014] overflow-y-scroll overflow-x-hidden ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <StarsCanvas/>
         {children}
       </body>
     </html>
